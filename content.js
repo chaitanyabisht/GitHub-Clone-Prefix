@@ -10,10 +10,9 @@ button_ssh.addEventListener("click", function() {
     var match = url.match(re);
     // If the URL matches the expected pattern, modify the clipboard contents
     if (match) {
-
         var repo = match[1] + "/" + match[2];
         var cloneUrl = "git clone git@github.com:" + repo + ".git";
-        console.log(cloneUrl)
+
         // Copy the text to the clipboard
         navigator.clipboard.writeText(cloneUrl)
     }
@@ -28,10 +27,9 @@ button_https.addEventListener("click", function() {
     var match = url.match(re);
     // If the URL matches the expected pattern, modify the clipboard contents
     if (match) {
-
         var repo = match[1] + "/" + match[2];
         var cloneUrl = "git clone https://github.com/" + repo + ".git";
-        console.log(cloneUrl)
+
         // Copy the text to the clipboard
         navigator.clipboard.writeText(cloneUrl)
     }
