@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "GitHub Clone Prefix",
+    "version": "1.0",
+    "description": "Add git clone prefix to copied URLs on GitHub",
+    "permissions": ["clipboardWrite", "activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["*://github.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
